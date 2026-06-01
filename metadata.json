@@ -1,0 +1,6 @@
+{
+  "name": "Titan Fitness",
+  "description": "Titan Fitness - Premium Luxury Gym and Fitness Website",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

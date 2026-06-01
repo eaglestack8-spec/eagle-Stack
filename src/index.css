@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-gold-light: #e0ffff;
+  --color-gold-base: #00FFFF;
+  --color-gold-dark: #008B8B;
+}
+
+/* Base resets & premium visual styling elements */
+body {
+  background-color: #050505;
+  color: #e5e5e5;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #00FFFF #050505;
+}
+
+/* Custom scrollbar animations */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00FFFF;
+}
+
+/* Glassmorphism effects */
+.glass-panel {
+  background: rgba(10, 10, 10, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-luxury {
+  background: rgba(15, 15, 15, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+}
+
+.text-cyan-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #aeffff 50%, #00FFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-cyan-gradient {
+  background: linear-gradient(135deg, #e0ffff 0%, #00FFFF 50%, #008080 100%);
+}
+
+.border-cyan-gradient {
+  border-image: linear-gradient(to right, #e0ffff, #00FFFF) 1;
+}
+
+/* Text outline utilities for high-end headers */
+.text-outline-white {
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.9);
+  color: transparent;
+}
+
+.text-outline-cyan {
+  -webkit-text-stroke: 1.5px rgba(0, 255, 255, 0.9);
+  color: transparent;
+}
+
+/* Custom fade effects and animation curves */
+.transition-luxury {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
